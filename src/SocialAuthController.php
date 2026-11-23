@@ -33,7 +33,3 @@ final class SocialAuthController
     }
 }
 
-interface SocialUserLinker
-{
-    public function link(string $provider, object $socialUser): object;
-}
