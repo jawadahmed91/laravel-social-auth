@@ -10,7 +10,7 @@ final class SocialAuthControllerTest extends TestCase
 {
     public function test_controller_requires_a_linker(): void
     {
-        $linker = $this->createMock(SocialUserLinker::class);
+        $linker = $this->createStub(SocialUserLinker::class);
         self::assertInstanceOf(SocialAuthController::class, new SocialAuthController($linker));
     }
 }
